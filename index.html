@@ -1,1 +1,35 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library - TOP</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="header">
+        <button id="addBookButton">Add a new book</button>
+      </div>
+      <div id="body"></div>
+      <div id="addBookDiv">
+        <form id="addBookForm">
+          <input id="titleInput" placeholder="Title of the book" required />
+          <input id="authorInput" placeholder="Author of the book" required />
+          <input
+            type="number"
+            id="pagesInput"
+            placeholder="Number of pages"
+            required
+          />
+          <label id="readLabel" for="readCheck">Read the book?</label>
+          <input type="checkbox" id="readCheck" required />
+          <button id="submitBook">Add book</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
